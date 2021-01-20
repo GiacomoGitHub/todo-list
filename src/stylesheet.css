@@ -1,0 +1,22 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header {
+    padding: 2px;
+    margin: -10px;
+    background-color: rgb(226, 65, 65);
+    color: white;
+}
+
+#projectsList {
+    padding: 50px;
+    margin: -10px;
+    background-color: rgb(230, 224, 224);
+}
+
+#tasksList {
+    padding: 50px;
+    margin: -10px;
+    background-color: white;
+}
