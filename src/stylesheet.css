@@ -3,6 +3,26 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+#projectsButton {
+    background-color: inherit;
+    border-radius: 50px;
+    border: none;
+}
+
+#projectsButton:hover {
+    font-weight: bolder;
+}
+
+#tasksButton {
+    background-color: inherit;
+    border-radius: 100%;
+    border: none;
+}
+
+#tasksButton:hover {
+    font-weight: bolder;
+}
+
 #columns {
     display: flex;
     flex-direction: row;
@@ -25,11 +45,13 @@ body {
 #projectsList {
     padding: 50px;
     background-color: rgb(230, 224, 224);
-    border-radius: 10% 0  0 10%;
+    border-radius: 5px 0 0 5px;
+    width: 20%;
 }
 
 #tasksList {
     padding: 50px;
     background-color: white;
-    border-radius: 0 10% 10% 0;
+    border-radius: 0 5px 5px 0;
+    width: 80%;
 }
