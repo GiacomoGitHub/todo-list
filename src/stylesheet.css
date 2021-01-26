@@ -1,37 +1,14 @@
 body {
-    background-color: rgb(226, 65, 65);
+    background-color: black;
     font-family: 'Quicksand', sans-serif;
-}
-
-#projectsButton {
-    background-color: inherit;
-    border-radius: 50px;
-    border: none;
-}
-
-#projectsButton:hover {
+    font-size: 2em;
     font-weight: bolder;
-}
-
-#tasksButton {
-    background-color: inherit;
-    border-radius: 100%;
-    border: none;
-}
-
-#tasksButton:hover {
-    font-weight: bolder;
-}
-
-#columns {
-    display: flex;
-    flex-direction: row;
+    color: ivory;
 }
 
 #header {
     padding: 20px;
-    background-color: rgb(226, 65, 65);
-    color: white;
+    background-color: inherit;
 }
 
 #brand {
@@ -42,16 +19,60 @@ body {
     display: inline;
 }
 
+#columns {
+    display: flex;
+    flex-direction: row;
+}
+
+#projectsButton {
+    display: inline;
+    background-color: inherit;
+    color: ivory;
+    border-radius: 50px;
+    border: none;
+}
+
+#projectsButton:hover {
+    cursor: pointer;
+    background-color: ivory;
+    color: black;
+    font-weight: bolder;
+}
+
+#projectsButton:active {
+    border: ivory;
+    background-color: black;
+    color: ivory;
+}
+
+#tasksButton {
+    display: inline;
+    background-color: inherit;
+    color: ivory;
+    border-radius: 100%;
+    border: none;
+}
+
+#tasksButton:hover {
+    cursor: pointer;
+    background-color: ivory;
+    color: black;
+    font-weight: bolder;
+}
+
+#tasksButton:active {
+    background-color: black;
+    color: ivory;
+}
+
 #projectsList {
     padding: 50px;
-    background-color: rgb(230, 224, 224);
     border-radius: 5px 0 0 5px;
     width: 20%;
 }
 
 #tasksList {
     padding: 50px;
-    background-color: white;
     border-radius: 0 5px 5px 0;
     width: 80%;
 }
