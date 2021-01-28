@@ -1,14 +1,13 @@
 body {
     background-color: black;
     font-family: 'Quicksand', sans-serif;
-    font-size: 2em;
-    font-weight: bolder;
     color: ivory;
 }
 
 #header {
-    padding: 20px;
+    padding: 25px;
     background-color: inherit;
+    transition: all 0.7s ease-out;
 }
 
 #brand {
@@ -20,6 +19,7 @@ body {
 }
 
 #columns {
+    transition: all 0.7s ease-out;
     display: flex;
     flex-direction: row;
 }
@@ -49,7 +49,7 @@ body {
     display: inline;
     background-color: inherit;
     color: ivory;
-    border-radius: 100%;
+    border-radius: 50px;
     border: none;
 }
 
@@ -61,6 +61,7 @@ body {
 }
 
 #tasksButton:active {
+    border: ivory;
     background-color: black;
     color: ivory;
 }
