@@ -7,7 +7,7 @@ body {
 #header {
     padding: 25px;
     background-color: inherit;
-    transition: all 0.7s ease-out;
+    border: solid 1px ivory;
 }
 
 #brand {
@@ -70,10 +70,29 @@ body {
     padding: 50px;
     border-radius: 5px 0 0 5px;
     width: 20%;
+    border: solid 1px ivory;
 }
 
 #tasksList {
     padding: 50px;
     border-radius: 0 5px 5px 0;
     width: 80%;
+    border: solid 1px ivory;
+}
+
+input {
+    background-color: inherit;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    opacity: 70%;
+    color: ivory;
+}
+
+input:hover {
+    opacity: 100%;
+}
+
+input:focus {
+    outline: none;
 }
