@@ -5,17 +5,17 @@ import tasksFactory from "./tasksFactory.js";
 
 import projectsFactory from "./projectsFactory.js";
 
-// Add functionalities to new project button
+// Create a new project when pressing the "Add project" button
 const projectsButtonTargeter = () => {
-    document.getElementById("projectsButton").addEventListener('click', () => {
+    document.getElementById("listsButton").addEventListener('click', () => {
         let newProject = document.createElement("INPUT");
         newProject.placeholder = "New project";
-        document.getElementById("projectsList").appendChild(newProject);
+        document.getElementById("leftPanel").appendChild(newProject);
     });
 };
 projectsButtonTargeter();
 
-// Add functionalities to new task button
+// Create a new task when pressing the "Add task" button
 const tasksButtonTargeter = () => {
     document.getElementById("tasksButton").addEventListener('click', () => {
             let newTask = document.createElement("INPUT");
@@ -26,3 +26,4 @@ const tasksButtonTargeter = () => {
 tasksButtonTargeter();
 
 projectsFactory();
+

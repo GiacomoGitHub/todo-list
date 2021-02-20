@@ -24,22 +24,21 @@ body {
     flex-direction: row;
 }
 
-#projectsButton {
+#listsButton {
     display: inline;
     background-color: inherit;
     color: ivory;
     border-radius: 50px;
     border: none;
+    font-size: larger;
 }
 
-#projectsButton:hover {
+#listsButton:hover {
     cursor: pointer;
-    background-color: ivory;
-    color: black;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 
-#projectsButton:active {
+#listsButton:active {
     border: ivory;
     background-color: black;
     color: ivory;
@@ -51,13 +50,12 @@ body {
     color: ivory;
     border-radius: 50px;
     border: none;
+    font-size: larger;
 }
 
 #tasksButton:hover {
     cursor: pointer;
-    background-color: ivory;
-    color: black;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 
 #tasksButton:active {
@@ -66,14 +64,14 @@ body {
     color: ivory;
 }
 
-#projectsList {
+#leftPanel {
     padding: 50px;
     border-radius: 5px 0 0 5px;
     width: 20%;
     border: solid 1px ivory;
 }
 
-#tasksList {
+#rightPanel {
     padding: 50px;
     border-radius: 0 5px 5px 0;
     width: 80%;
