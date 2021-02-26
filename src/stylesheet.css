@@ -24,7 +24,7 @@ body {
     flex-direction: row;
 }
 
-#listsButton {
+#projectsButton {
     display: inline;
     background-color: inherit;
     color: ivory;
@@ -33,12 +33,12 @@ body {
     font-size: larger;
 }
 
-#listsButton:hover {
+#projectsButton:hover {
     cursor: pointer;
     font-weight: lighter;
 }
 
-#listsButton:active {
+#projectsButton:active {
     border: ivory;
     background-color: black;
     color: ivory;
@@ -93,4 +93,8 @@ input:hover {
 
 input:focus {
     outline: none;
+}
+
+.roundButton {
+    border-radius: 50px;
 }
