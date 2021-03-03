@@ -1,8 +1,8 @@
 // create a new project
 const projectsFactory = (title) => {
+    let id = title;
     let tasks = [];
-    let id = Date.now();
-    return { title, tasks, id };
+    return { id, tasks };
 };
 
 export default projectsFactory;
