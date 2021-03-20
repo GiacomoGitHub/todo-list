@@ -29,11 +29,13 @@ body {
     color: ivory;
     border-radius: 50px;
     border: none;
-    font-size: larger;
+    font-size: xx-large;
+    opacity: 60%;
 }
 
 #projectsButton:hover {
     cursor: pointer;
+    opacity: 75%;
     font-weight: lighter;
 }
 
@@ -41,26 +43,32 @@ body {
     border: ivory;
     background-color: black;
     color: ivory;
+    opacity: 100%;
+    font-weight: normal;
 }
 
-#tasksButton {
+.tasksButton {
     display: inline;
     background-color: inherit;
     color: ivory;
     border-radius: 50px;
     border: none;
-    font-size: larger;
+    font-size: xx-large;
+    opacity: 60%;
 }
 
-#tasksButton:hover {
+.tasksButton:hover {
     cursor: pointer;
+    opacity: 75%;
     font-weight: lighter;
 }
 
-#tasksButton:active {
+.tasksButton:active {
     border: ivory;
     background-color: black;
     color: ivory;
+    opacity: 100%;
+    font-weight: normal;
 }
 
 #leftPanel {
@@ -68,6 +76,19 @@ body {
     border-radius: 5px 0 0 5px;
     width: 20%;
 
+}
+
+.projectTextStyle {
+    cursor: pointer;
+    opacity: 65%;
+}
+
+.projectTextStyle:hover {
+    opacity: 75%;
+}
+
+.projectTextStyle:active {
+    opacity: 100%;
 }
 
 #rightPanel {
@@ -79,31 +100,9 @@ body {
 }
 
 input {
-    background-color: inherit;
-    border: none;
-    padding: 5px;
-    margin: 10px;
-    opacity: 70%;
+    background-color: rgb(31, 31, 31);
     color: ivory;
-    font-size: larger;
-}
-
-input:hover {
-    opacity: 100%;
-    cursor: pointer;
-}
-
-.taskText {
-    min-width: 500px;
-    border-bottom: solid 1px rgba(255, 255, 240, 0.178);
-}
-
-input:hover {
-    opacity: 100%;
-}
-
-input:focus {
-    outline: none;
+    border: solid 1px ivory;
 }
 
 .checkButton {
@@ -114,6 +113,8 @@ input:focus {
     opacity: 80%;
     width: 15px;
     height: 15px;
+    margin: 50px;
+    display: inline;
 }
 
 .checkButton:hover {
@@ -122,11 +123,12 @@ input:focus {
 }
 
 .removeButton {
+    margin-left: 20px;
     border-radius: 50px;
     border: none;
     background-color: black;
     font-weight: bold;
-    opacity: 80%;
+    opacity: 70%;
     width: 15px;
     height: 15px;
     color: ivory;
