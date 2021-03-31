@@ -15,6 +15,36 @@ const projectsButtonTargeter = () => { // listen to the click on the projects bu
             textProject.classList.add("projectTextStyle");
             document.getElementById("leftPanel").appendChild(textProject);
 
+
+
+
+
+
+
+            // clear the right panel of all children/tasks
+            function clearPage () {
+                const parent = document.getElementById("rightPanel"); // target the "rightPanel" div, parent of all the tasks
+                while (parent.firstChild) { // as long as there is a child
+                    parent.removeChild(parent.lastChild); // remove the last child
+                  }
+            };
+
+            // testing how to show text dynamically when clicking the project text
+            textProject.addEventListener("click", () => { 
+                clearPage();
+                const test = document.createElement("P");
+                test.innerHTML = "Testing this";
+                document.getElementById("rightPanel").appendChild(test)
+            
+            });
+
+
+
+
+
+
+
+
             // create a button to remove the project and the remove button itself when pressed
             let deleteProject = document.createElement("BUTTON");
             deleteProject.innerHTML = "X";
@@ -47,11 +77,12 @@ const projectsButtonTargeter = () => { // listen to the click on the projects bu
             let deleteTask = document.createElement("BUTTON");
             deleteTask.innerHTML = "X";
             deleteTask.classList.add("removeButton");
-            // document.getElementById("rightPanel").appendChild(deleteTask);
-            taskText.appendChild(deleteTask);
+            taskText.appendChild(deleteTask); // found this method to attach nodes to any child directly
             deleteTask.addEventListener("click", ()=> {
-                document.getElementById("rightPanel").removeChild(taskText);
-                document.getElementById("rightPanel").removeChild(deleteTask);
+                taskText.removeChild(deleteTask); // this removes the x button next to the task
+                document.getElementById("rightPanel").removeChild(taskText); // this removes the task itself
+                const index = newProject.tasks.indexOf(task); // this finds the position of the task in the array inside the project object
+                newProject.tasks.splice(index, 1); // this removes the task object from the array inside the project object
             });
         });
         
